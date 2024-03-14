@@ -10,8 +10,8 @@ const schema = mongoose.Schema(
   { versionKey: false, timestamps: true }
 );
 
-class AuditLogs extends mongoose.Model {}
+class User extends mongoose.Model {}
 
-schema.loadClass(AuditLogs);
+schema.loadClass(User);
 
-module.exports = mongoose.model("audit_logs", schema);
+module.exports = mongoose.model("User", schema);
